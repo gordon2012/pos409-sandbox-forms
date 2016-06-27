@@ -10,11 +10,20 @@ using System.Windows.Forms;
 
 namespace pos409_sandbox_forms
 {
-    public partial class Form1 : Form
+    public partial class OverdraftForm : Form
     {
-        public Form1()
+        public OverdraftForm()
         {
             InitializeComponent();
         }
     }
+
+
+    class BankAccount
+    {
+        public double Balance { get; set; }
+
+    }
+
+
 }
