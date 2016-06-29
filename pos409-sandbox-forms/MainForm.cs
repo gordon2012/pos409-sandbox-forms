@@ -22,12 +22,17 @@ namespace pos409_sandbox_forms
         public MainForm()
         {
             InitializeComponent();
-            OpenModal(new OverdraftForm());
+            OpenModal(new EventsForm());
         }
 
         private void btnOverdraft_Click(object sender, EventArgs e)
         {
             OpenModal(new OverdraftForm());
+        }
+
+        private void btnEvents_Click(object sender, EventArgs e)
+        {
+            OpenModal(new EventsForm());
         }
     }
 }
