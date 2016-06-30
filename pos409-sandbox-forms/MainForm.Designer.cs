@@ -30,13 +30,14 @@
         {
             this.btnOverdraft = new System.Windows.Forms.Button();
             this.btnEvents = new System.Windows.Forms.Button();
+            this.btnPopulating = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOverdraft
             // 
-            this.btnOverdraft.Location = new System.Drawing.Point(25, 27);
+            this.btnOverdraft.Location = new System.Drawing.Point(12, 12);
             this.btnOverdraft.Name = "btnOverdraft";
-            this.btnOverdraft.Size = new System.Drawing.Size(152, 55);
+            this.btnOverdraft.Size = new System.Drawing.Size(152, 33);
             this.btnOverdraft.TabIndex = 0;
             this.btnOverdraft.Text = "Overdraft Account";
             this.btnOverdraft.UseVisualStyleBackColor = true;
@@ -44,19 +45,30 @@
             // 
             // btnEvents
             // 
-            this.btnEvents.Location = new System.Drawing.Point(218, 118);
+            this.btnEvents.Location = new System.Drawing.Point(170, 12);
             this.btnEvents.Name = "btnEvents";
-            this.btnEvents.Size = new System.Drawing.Size(75, 23);
+            this.btnEvents.Size = new System.Drawing.Size(152, 33);
             this.btnEvents.TabIndex = 1;
             this.btnEvents.Text = "Events";
             this.btnEvents.UseVisualStyleBackColor = true;
             this.btnEvents.Click += new System.EventHandler(this.btnEvents_Click);
+            // 
+            // btnPopulating
+            // 
+            this.btnPopulating.Location = new System.Drawing.Point(12, 51);
+            this.btnPopulating.Name = "btnPopulating";
+            this.btnPopulating.Size = new System.Drawing.Size(152, 33);
+            this.btnPopulating.TabIndex = 2;
+            this.btnPopulating.Text = "Populating";
+            this.btnPopulating.UseVisualStyleBackColor = true;
+            this.btnPopulating.Click += new System.EventHandler(this.btnPopulating_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(460, 376);
+            this.Controls.Add(this.btnPopulating);
             this.Controls.Add(this.btnEvents);
             this.Controls.Add(this.btnOverdraft);
             this.Name = "MainForm";
@@ -69,6 +81,7 @@
 
         private System.Windows.Forms.Button btnOverdraft;
         private System.Windows.Forms.Button btnEvents;
+        private System.Windows.Forms.Button btnPopulating;
     }
 }
 
