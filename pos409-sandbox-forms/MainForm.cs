@@ -22,7 +22,7 @@ namespace pos409_sandbox_forms
         public MainForm()
         {
             InitializeComponent();
-            OpenModal(new PopulatingForm());
+            OpenModal(new WhereForm());
         }
 
         private void btnOverdraft_Click(object sender, EventArgs e)
@@ -38,6 +38,11 @@ namespace pos409_sandbox_forms
         private void btnPopulating_Click(object sender, EventArgs e)
         {
             OpenModal(new PopulatingForm());
+        }
+
+        private void btnWhere_Click(object sender, EventArgs e)
+        {
+            OpenModal(new WhereForm());
         }
     }
 }

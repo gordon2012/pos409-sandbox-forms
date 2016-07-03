@@ -31,6 +31,7 @@
             this.btnOverdraft = new System.Windows.Forms.Button();
             this.btnEvents = new System.Windows.Forms.Button();
             this.btnPopulating = new System.Windows.Forms.Button();
+            this.btnWhere = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOverdraft
@@ -63,11 +64,22 @@
             this.btnPopulating.UseVisualStyleBackColor = true;
             this.btnPopulating.Click += new System.EventHandler(this.btnPopulating_Click);
             // 
+            // btnWhere
+            // 
+            this.btnWhere.Location = new System.Drawing.Point(170, 51);
+            this.btnWhere.Name = "btnWhere";
+            this.btnWhere.Size = new System.Drawing.Size(152, 33);
+            this.btnWhere.TabIndex = 3;
+            this.btnWhere.Text = "Where";
+            this.btnWhere.UseVisualStyleBackColor = true;
+            this.btnWhere.Click += new System.EventHandler(this.btnWhere_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(460, 376);
+            this.Controls.Add(this.btnWhere);
             this.Controls.Add(this.btnPopulating);
             this.Controls.Add(this.btnEvents);
             this.Controls.Add(this.btnOverdraft);
@@ -82,6 +94,7 @@
         private System.Windows.Forms.Button btnOverdraft;
         private System.Windows.Forms.Button btnEvents;
         private System.Windows.Forms.Button btnPopulating;
+        private System.Windows.Forms.Button btnWhere;
     }
 }
 
